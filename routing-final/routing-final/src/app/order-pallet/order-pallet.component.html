@@ -1,40 +1,39 @@
 <div class="container">
 
-    <h3>Pallet Order</h3>
-    <hr>
-   <form #orderForm="ngForm" novalidate (submit)="submitOrder()" id="orderForm">
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-6">
-            <label class="control-label">Company Name
-              <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
-                [(ngModel)]="defecte.reason" />
-            </label>
-          </div>
-          <div class="col-md-6">
-            <label class="control-label"> Quantatity
-              <input type="text" class="form-control" name='borrower' #borrower="ngModel" id="project" required minlength="3" maxlength="20"
-                [(ngModel)]="pallet.borrower" />
-            </label>
-          </div>
+  <h3>Pallet Order</h3>
+  <hr>
+ <form #orderForm="ngForm" novalidate (submit)="submitOrder()" id="orderForm">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <label class="control-label">Company Name
+            <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
+              [(ngModel)]="defecte.reason" />
+          </label>
         </div>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="col-md-4 col-sm-12">
+          <label class="control-label"> Quantatity
+            <input type="text" class="form-control" name='borrower' #borrower="ngModel" id="project" required minlength="3" maxlength="20"
+              [(ngModel)]="pallet.borrower" />
+          </label>
+        </div>
+        <div class="col-md-4 col-sm-12">
             <label class="control-label">leasing Period
               <input type="text" class="form-control" name='palletSrno' id="palletSrno" #palletSrno="ngModel" required minlength="2" maxlength="20"
                 [(ngModel)]="pallet.palletSrno" />
             </label>
           </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p></p>
-            <button type="submit" id="submit" class="btn btn-success" aria-hidden="true">
-              <i class="fa fa-check-circle-o"></i> submit Order
-            </button>
-          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <p></p>
+          <button type="submit" id="submit" class="btn btn-success" aria-hidden="true">
+            <i class="fa fa-check-circle-o"></i> submit Order
+          </button>
         </div>
       </div>
-    </form>
-   
-  </div>
-  
+    </div>
+  </form>
+ 
+</div>
