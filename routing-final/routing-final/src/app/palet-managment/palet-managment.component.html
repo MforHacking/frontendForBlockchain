@@ -1,3 +1,26 @@
-<p>
-  palet-managment works!
-</p>
+<div class="container">
+
+  <h3>Pallet Distribution</h3>
+  <hr>
+ <form #orderForm="ngForm" novalidate (submit)="submitOrder()" id="orderForm">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <label class="control-label">Company Name
+            <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
+              [(ngModel)]="defecte.reason" />
+          </label>
+        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p></p>
+          <button type="submit" id="submit" class="btn btn-success" aria-hidden="true">
+            <i class="fa fa-check-circle-o"> check </i> 
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+ 
+</div>

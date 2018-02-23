@@ -1,16 +1,16 @@
 <div class="container">
   <div>
     <br>
-    <input class="form-control mr-sm-2 inner" type="text" placeholder="Pallet Serial No.">
-    <button class="btn btn-outline-success my-2 my-sm-0" style= "margin:1cm;" type="submit">Search</button>
+    <input class="form-control mr-sm-2" style="margin:0.5cm;" type="text" placeholder="Pallet Serial No.">
+    <button class="btn btn-outline-success my-2 my-sm-0 inner" style= "margin:1cm;" type="submit"> <i class="fa fa-check-circle-o"> Search </i> </button>
+    <div class="text-left" style="margin:1cm">The Pallet is :{{Results}}</div>
   </div>
   <hr>
-  <div class="card inner" style="width: justify; padding:1cm">
+  <div class="card inner" style="width: 400px; padding:1cm">
    <div class="card-body inner" style="width: justify; padding:1cm">
       <h5 class="card-title inner">Available Pallet</h5>
       <h6 class="card-subtitle mb-2 text-muted inner"> in the inventory </h6>
       <p class="card-text inner">currently in out inventory we have {{pallet_Count}} available</p>
-      <a  [routerLink]="['management']" class="card-link inner"> Pallet Managment </a>
-    </div>
+        </div>
   </div>
 </div>
