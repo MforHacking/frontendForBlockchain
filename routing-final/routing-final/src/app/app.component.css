@@ -1,0 +1,26 @@
+.container {
+  margin-top: 30px;
+}
+
+div {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+label {
+  max-width: 50px;
+  height: 25px;
+  background-color: rgb(140, 235, 248);
+}
+
+.outer {
+  padding: 10px;
+ 
+}
+
+.inner {
+  margin: 10px;
+  padding: 10px;
+}

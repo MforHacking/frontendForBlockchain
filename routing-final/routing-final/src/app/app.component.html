@@ -1,0 +1,37 @@
+<div class="container">
+
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded inner">
+    <button class="navbar-toggler navbar-toggler-right inner" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand inner" href="/">About GC </a>
+    <div class="collapse navbar-collapse inner" id="navbarText">
+      <ul class="navbar-nav mr-auto inner">
+        <li class="nav-item active inner" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/">Home</a>
+        </li>
+        <li class="nav-item inner" routerLinkActive="active">
+          <a routerLink="gcView">GC View</a>
+        </li>
+        <li class="nav-item inner" routerLinkActive="active">
+          <a routerLink="order">Palets Order</a>
+        </li>
+        <li class="nav-item inner" routerLinkActive="active">
+          <a [routerLink]="['management']">Pallet Flow View</a>
+        </li>
+        <li class="nav-item inner" routerLinkActive="active">
+            <a [routerLink]="['defect']">Defecte Reporting</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ 
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 inner">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

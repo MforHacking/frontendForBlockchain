@@ -1,0 +1,48 @@
+<div class="container">
+
+  <h3>defect-reporting</h3>
+
+  <hr>
+
+  <form #defactForm="ngForm" novalidate (submit)="reportDefact()" id="defactForm">
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-6">
+          <label class="control-label">Defect Reason
+            <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
+              [(ngModel)]="defecte.reason" />
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="control-label"> Borrower
+            <input type="text" class="form-control" name='borrower' #borrower="ngModel" id="project" required minlength="3" maxlength="20"
+              [(ngModel)]="pallet.borrower" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label class="control-label">Pallet Sr. No.
+            <input type="text" class="form-control" name='palletSrno' id="palletSrno" #palletSrno="ngModel" required minlength="2" maxlength="20"
+              [(ngModel)]="pallet.palletSrno" />
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="control-label">Pallet Defect Description
+            <textarea rows="5" class="form-control" name='pallet_deffect_desc' id="pallet_deffect_desc" #pallet_deffect_desc="ngModel"
+              required minlength="2" maxlength="30" [(ngModel)]="defected.description"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p></p>
+          <button type="submit" id="saveEmployee" class="btn btn-success" aria-hidden="true">
+            <i class="fa fa-floppy-o"></i> Speichern
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>
