@@ -14,6 +14,7 @@ import { DefectReportingComponent } from './defect-reporting/defect-reporting.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AuthGuard } from './auth-guard.service';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { ScanComponent } from './scan/scan.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'order', component: OrderPalletComponent },
   { path: 'management', component: PaletManagmentComponent },
   { path: 'defect', component: DefectReportingComponent },
+  { path: 'scan', component: ScanComponent },
 
   //  fall back opption
   { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },

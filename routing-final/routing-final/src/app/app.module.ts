@@ -21,6 +21,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { TestRestApiComponent } from './test-component/test-rest-api/test-rest-api.component';
 import { DataServiceService } from './-services/data-service.service';
+import { ScanComponent } from './scan/scan.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { DataServiceService } from './-services/data-service.service';
     OrderPalletComponent,
     PaletManagmentComponent,
     DefectReportingComponent,
-    TestRestApiComponent
+    TestRestApiComponent,
+    ScanComponent
   ],
   imports: [
     BrowserModule,
