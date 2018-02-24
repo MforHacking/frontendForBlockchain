@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -17,6 +19,9 @@ import { DefectReportingComponent } from './defect-reporting/defect-reporting.co
 //Bootstrap Dependency
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { TestRestApiComponent } from './test-component/test-rest-api/test-rest-api.component';
+import { DataServiceService } from './-services/data-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,16 +31,19 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     GcViewComponent,
     OrderPalletComponent,
     PaletManagmentComponent,
-    DefectReportingComponent
+    DefectReportingComponent,
+    TestRestApiComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     HttpModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+   
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,7 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefectReportingComponent implements OnInit {
 
+  defect: any = {
+
+    reason: "",
+    borrower: "",
+    palletSrno:"",
+    palletDeffectDesc:""
+  }
+
   constructor() { }
+
+  reportDefact(e){
+   
+    console.log(this.defect);
+
+
+   this.defect = {
+
+      reason: "",
+      borrower: "",
+      palletSrno:"",
+      palletDeffectDesc:""
+    }
+
+
+    e.preventDefault();
+  }
 
   ngOnInit() {
   }

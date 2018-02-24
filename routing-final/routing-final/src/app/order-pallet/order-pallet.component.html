@@ -7,20 +7,18 @@
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <label class="control-label">Company Name
-            <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
-              [(ngModel)]="defecte.reason" />
+            <input type="text" class="form-control" name='companyName' #companyName="ngModel" id="companyName" required minlength="3" maxlength="40"
+              [(ngModel)]="order.companyName" />
           </label>
-        </div>
+       </div>
         <div class="col-md-4 col-sm-12">
           <label class="control-label"> Quantatity
-            <input type="text" class="form-control" name='borrower' #borrower="ngModel" id="project" required minlength="3" maxlength="20"
-              [(ngModel)]="pallet.borrower" />
+            <input type="number" class="form-control" name='quantatiy' #quantatiy="ngModel" id="quantatiy" required  [(ngModel)]="order.quantatiy" />
           </label>
         </div>
         <div class="col-md-4 col-sm-12">
             <label class="control-label">leasing Period
-              <input type="text" class="form-control" name='palletSrno' id="palletSrno" #palletSrno="ngModel" required minlength="2" maxlength="20"
-                [(ngModel)]="pallet.palletSrno" />
+              <input type="number" class="form-control" name='leasingPeriod' id="leasingPeriod" #leasingPeriod="ngModel" required  [(ngModel)]="order.leasingPeriod" />
             </label>
           </div>
       </div>

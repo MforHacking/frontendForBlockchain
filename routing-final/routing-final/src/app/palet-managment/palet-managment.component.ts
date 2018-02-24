@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaletManagmentComponent implements OnInit {
 
+  history:any = {
+    companyName: ""
+  }
+
   constructor() { }
 
   ngOnInit() {
+
+    this.history.companyName="";
+  }
+
+  displayRecords(){
+
+    console.log(this.history.companyName);
+
   }
 
 }

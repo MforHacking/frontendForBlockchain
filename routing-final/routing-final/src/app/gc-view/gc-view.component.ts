@@ -17,9 +17,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 export class GcViewComponent implements OnInit {
 
+  pallet_count:number;
+
   constructor() { }
 
   ngOnInit() {
+    this.pallet_count=10000;
   }
 
 }

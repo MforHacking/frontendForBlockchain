@@ -4,19 +4,19 @@
 
   <hr>
 
-  <form #defactForm="ngForm" novalidate (submit)="reportDefact()" id="defactForm">
+  <form #defactForm="ngForm" novalidate (submit)="reportDefact($event)" id="defactForm">
     <div class="form-group">
       <div class="row">
         <div class="col-md-6">
           <label class="control-label">Defect Reason
             <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
-              [(ngModel)]="defecte.reason" />
+              [(ngModel)]="defect.reason" />
           </label>
         </div>
         <div class="col-md-6">
           <label class="control-label"> Borrower
             <input type="text" class="form-control" name='borrower' #borrower="ngModel" id="project" required minlength="3" maxlength="20"
-              [(ngModel)]="pallet.borrower" />
+              [(ngModel)]="defect.borrower" />
           </label>
         </div>
       </div>
@@ -24,13 +24,13 @@
         <div class="col-md-6">
           <label class="control-label">Pallet Sr. No.
             <input type="text" class="form-control" name='palletSrno' id="palletSrno" #palletSrno="ngModel" required minlength="2" maxlength="20"
-              [(ngModel)]="pallet.palletSrno" />
+              [(ngModel)]="defect.palletSrno" />
           </label>
         </div>
         <div class="col-md-6">
           <label class="control-label">Pallet Defect Description
-            <textarea rows="5" class="form-control" name='pallet_deffect_desc' id="pallet_deffect_desc" #pallet_deffect_desc="ngModel"
-              required minlength="2" maxlength="30" [(ngModel)]="defected.description"></textarea>
+            <textarea rows="5" class="form-control" name='palletDeffectDesc' id="palletDeffectDesc" #palletDeffectDesc="ngModel"
+              required minlength="2" maxlength="30" [(ngModel)]="defect.palletDeffectDesc"></textarea>
           </label>
         </div>
       </div>

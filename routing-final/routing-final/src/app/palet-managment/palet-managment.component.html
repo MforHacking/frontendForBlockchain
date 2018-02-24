@@ -2,13 +2,13 @@
 
   <h3>Pallet Distribution</h3>
   <hr>
- <form #orderForm="ngForm" novalidate (submit)="submitOrder()" id="orderForm">
+ <form #orderForm="ngForm" novalidate (submit)="displayRecords()" id="orderForm">
     <div class="form-group">
       <div class="row">
         <div class="col-md-4 col-sm-12">
           <label class="control-label">Company Name
-            <input type="text" class="form-control" name='defectReason' #banking="ngModel" id="defectReason" required minlength="3" maxlength="20"
-              [(ngModel)]="defecte.reason" />
+            <input type="text" class="form-control" name='companyName' #companyName="ngModel" id="companyName" required minlength="3" maxlength="20"
+              [(ngModel)]="history.companyName" />
           </label>
         </div>
       <div class="row">
