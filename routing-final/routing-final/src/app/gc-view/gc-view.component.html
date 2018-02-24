@@ -1,9 +1,13 @@
 <div class="container">
   <div>
     <br>
-    <input class="form-control mr-sm-2" style="margin:0.5cm;" type="text" placeholder="Pallet Serial No.">
+    <form #gcForm="ngForm" novalidate (submit)="submitValue($event)" id="gcForm">
+    <div class="form-group">
+    <input class="form-control mr-sm-2" style="margin:0.5cm;" type="text" placeholder="Pallet Serial No." name='selectedPalletId' id="selectedPalletId" [(ngModel)]="selectedPalletId">
     <button class="btn btn-outline-success my-2 my-sm-0 inner" style= "margin:1cm;" type="submit"> <i class="fa fa-check-circle-o"> Search </i> </button>
-    <div class="text-left" style="margin:1cm">The Pallet is :{{Results}}</div>
+    <div class="text-left" style="margin:1cm">The Pallet is :{{results}}</div>
+  </div>
+  </form>
   </div>
   <hr>
   <div class="card inner" style="width: 400px; padding:1cm">
